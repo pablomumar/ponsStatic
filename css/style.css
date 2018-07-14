@@ -195,18 +195,18 @@
     font-weight: 600;
     width: max-content;
 }
-.home .noleggio{
+.home .noleggioForm{
     padding-bottom: 50px;
 }
-.home .noleggio form label{
+.home .noleggioForm form label{
     width: 100%;
 }
 
-.home .noleggio form input{
+.home .noleggioForm form input{
     width: 100%;
     padding-left: 15px;
 }
-.home .noleggio form button{
+.home .noleggioForm form button{
     margin-top: 10px;
     width: 100%;
     background-color: white;
@@ -294,6 +294,110 @@
     line-height: 28px;
 }
 
+/*------------------------NOLEGGIO---------------------*/
+.noleggio .item1{
+    position: relative;
+}
+.noleggio .item1 div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.noleggio .item1 div p{
+    text-transform: uppercase;
+    color: #900606;
+    font-weight: 700;
+}
+.noleggio .firstNoleggio img{
+    width: 100%;
+    height: auto;
+}
+
+.noleggio .firstNoleggio>div{
+    width: 20%;
+    border-bottom: 1px lightgray solid;
+    border-left: 1px lightgray solid;
+}
+.noleggio .firstNoleggio>div:first-child{
+    border-left: 0;
+}
+.noleggio .secondNoleggio>div{
+    padding: 40px 30px;
+    border-left: 1px lightgray solid;
+}
+.noleggio .secondNoleggio>div:first-child{
+    border-left: 0;
+}
+
+.noleggio .noleggioForm{
+    padding-bottom: 50px;
+}
+.noleggio .noleggioForm form label{
+    font-size: 14px;
+    width: 100%;
+}
+
+.noleggio .noleggioForm form input{
+    padding-left: 15px;
+    float: right;
+}
+.noleggio .noleggioForm form button{
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #283346;
+    padding: 2px 15px;
+    float: right;
+    color: #283346;
+    font-weight: 600;
+}
+.noleggio .secondNoleggio .boxText{
+    padding: 30px 30px;
+}
+.noleggio .secondNoleggio .boxText .mainTitle{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.noleggio .secondNoleggio .boxText .mainTitle::before{
+    content: '_ ';
+    font-size: 24px;
+    font-weight: 500;
+}
+.noleggio .secondNoleggio .boxText .subtitle{
+    font-weight: 700;
+    line-height: 16px;
+    padding-top: 10px;
+}
+.noleggio .secondNoleggio .boxText p{
+    line-height: 18px;
+    margin-bottom: .5em;
+}
+.noleggio .itemAccord{
+    padding: 16px 50px;
+    background-color: #eee;
+    border-bottom: 1px #aaa solid;
+    color: #283346;
+}
+.noleggio .itemAccord:hover, .noleggio .itemAccord.activeAccord{
+    color: white;
+    background-color: #283346;
+    border-bottom: 1px #aaa solid;
+}
+
+.noleggio .itemAccord:last-child{
+    border-bottom: 0;
+}
+.noleggio .itemAccord .titleAccord h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.noleggio .itemAccord{}
 /*------------------------COMMON---------------------*/
 .title{
     padding-top: 40px;
