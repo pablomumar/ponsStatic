@@ -72,10 +72,10 @@
 }
 
 .rightSideMenu .item.active{
-    color: lightgreen;
+    color: mediumseagreen;
 }
 .rightSideMenu .item.active:hover{
-    color: lightgreen;
+    color: mediumseagreen;
     text-decoration: none;
 }
 
@@ -265,18 +265,6 @@
     font-size: 14px;
 }
 /*------------------------AZIENDA---------------------*/
-.azienda .breadcrumb{
-    width: 100%;
-    background-color: transparent;
-    font-family: Montserrat;
-}
-.azienda .breadcrumb .bread{
-    color: #bbb;
-}
-.azienda .breadcrumb .bread span{
-    color: #283346;
-    font-weight: 700;
-}
 .azienda .text{
     font-weight: 400;
     letter-spacing: 1.4px;
@@ -397,7 +385,44 @@
     font-weight: 700;
     margin-bottom: 0;
 }
-.noleggio .itemAccord{}
+/*------------------------ACCESSORI---------------------*/
+.accessori .row{
+    padding-bottom: 30px;
+}
+.accessori .itemList{
+    padding: 16px 40px;
+    background-color: #eee;
+    border-bottom: 1px #bbb solid;
+    border-left: 1px #bbb solid;
+    color: #283346;
+    display: inline-flex;
+}
+.accessori .itemList:hover{
+    color: mediumseagreen;
+}
+.accessori .itemList:nth-child(odd){
+    border-left: 0;
+}
+.accessori .itemList:last-child{
+    border-bottom: 0;
+}
+.accessori .itemList h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    width: 95%;
+    margin: 0;
+}
+.accessori .itemList p{
+    text-align: center;
+    width: 5%;
+    float: right;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
 /*------------------------COMMON---------------------*/
 .title{
     padding-top: 40px;
@@ -415,4 +440,17 @@
 .title:before{
     content: '_ ';
     font-size: 45px;
+}
+
+.azienda .breadcrumb, .accessori .breadcrumb{
+    width: 100%;
+    background-color: transparent;
+    font-family: Montserrat;
+}
+.azienda .breadcrumb .bread, .accessori .breadcrumb .bread{
+    color: #bbb;
+}
+.azienda .breadcrumb .bread span, .accessori .breadcrumb .bread span{
+    color: #283346;
+    font-weight: 700;
 }
